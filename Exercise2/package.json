@@ -1,0 +1,12 @@
+{
+  "name": "visit-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "numOfVisits.js",
+  "scripts": {
+    "start": "node numOfVisits.js"
+  },
+  "dependencies": {
+    "cookie": "^0.6.0"
+  }
+} 

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Functions Exercise 1
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 5px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Node.js Functions</h1>
+
+    <div class="form-container">
+        <h2>A) Find Summation</h2>
+        <p>Enter a positive integer to calculate the sum of numbers from 1 to that number.</p>
+        <form action="/findSummation" method="get">
+            <div class="form-group">
+                <input type="text" id="n" name="n" required placeholder="Enter some number...">
+            </div>
+            <button type="submit">Calculate Sum</button>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>B) Uppercase First and Last Letters</h2>
+        <p>Enter a string to capitalize the first and last letter of each word.</p>
+        <form action="/uppercaseFirstandLast" method="get">
+            <div class="form-group">
+                <input type="text" id="text1" name="text" required placeholder="Enter some text...">
+            </div>
+            <button type="submit">Transform Text</button>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>C) Find Average and Median</h2>
+        <p>Enter a comma-separated list of numbers to calculate their average and median.</p>
+        <form action="/findAverageAndMedian" method="get">
+            <div class="form-group">
+                <input type="text" id="numbers" name="numbers" required placeholder="e.g., 1,2,3,4,5">
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>D) Find Four-Digit Number</h2>
+        <p>Enter a string of numbers separated by spaces to find the first four-digit number.</p>
+        <form action="/find4Digits" method="get">
+            <div class="form-group">
+                <input type="text" id="text2" name="text" required placeholder="e.g., 123 456 1234 5678">
+            </div>
+            <button type="submit">Find Four-Digit Number</button>
+        </form>
+    </div>
+</body>
+</html> 
